@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIT Course Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">RIT Course Catalog</h1>
+            <p class="tagline">Explore Your Academic Journey</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <div class="filter-group">
+                <label for="search">Search Courses:</label>
+                <input type="text" id="search" placeholder="Search by course code, title, or description...">
+            </div>
+            
+            <div class="filter-group">
+                <label for="department">Department:</label>
+                <select id="department">
+                    <option value="">All Departments</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="level">Course Level:</label>
+                <select id="level">
+                    <option value="">All Levels</option>
+                    <option value="100">100 Level</option>
+                    <option value="200">200 Level</option>
+                    <option value="300">300 Level</option>
+                    <option value="400">400 Level</option>
+                    <option value="500">500+ Level</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="course-count">
+            <p>Showing <span id="count">0</span> courses</p>
+        </section>
+
+        <section class="courses" id="courseList">
+            <!-- Courses will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rochester Institute of Technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
